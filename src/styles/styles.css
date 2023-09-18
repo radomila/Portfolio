@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100&family=Heebo:wght@300&family=Lato&family=Montserrat+Alternates:wght@100&family=Nunito+Sans:opsz,wght@6..12,300&family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Geologica:wght@100&family=Heebo:wght@300&family=Lato&family=Montserrat+Alternates:wght@100&family=Mulish:wght@300&family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@400;500;600;700;800&family=Raleway:wght@300&family=Ubuntu&display=swap');
+body {
+  font-family: 'Geologica', sans-serif;
+  background-color: #fafafa;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0rem 0rem 0rem 2rem;
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar {
+  display: flex;
+  gap: 3rem;
+  list-style-type: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 769px) {
+  .navbar {
+    visibility: hidden;
+  }
+}
+
+.navbar li {
+  position: relative;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navbar li:hover {
+  /* text-decoration: solid underline #7c73e6 3px;
+  text-underline-offset: 8px; */
+  transition: 0.5s;
+}
+
+.toggle-menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: #fafafa;
+  width: 20rem;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.responsive-menu button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border: none;
+  background-color: transparent;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.toggle-items {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  list-style-type: none;
+  cursor: pointer;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+hr {
+  width: 90%;
+  border: 1px solid black;
+}
+
+.greeting {
+  font-size: 16px;
+}
+
+.name {
+  font-size: 24px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  gap: 3rem;
+  margin-top: 10rem;
+  margin-left: 1rem;
+  background-color: transparent;
+}
+
+.download-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: #66bfbf;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.download-icon {
+  width: 16px;
+}
+
+.introduction {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  margin-top: 8rem;
+  margin-left: 4rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.introduction-brief {
+  max-width: 50rem;
+  font-size: 4rem;
+  color: black;
+  font-weight: 700;
+  margin: 0;
+}
+
+.introduction-paragraph {
+  margin: 0;
+  max-width: 50rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.introduction-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.introduction-social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-right: 0.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: #7c73e6;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 40px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.button-secondary {
+  background-color: #ffffff;
+  color: #7c73e6;
+  border: 1px solid #7c73e6;
+  border-radius: 50px;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.title-primary {
+  display: flex;
+  justify-content: center;
+  color: black;
+  margin-bottom: 4rem;
+}
+
+.title-secondary {
+  color: #66bfbf;
+}
+
+.introduction-line {
+  border: 1px solid #66bfbf;
+  margin-top: 2rem;
+}
+
+.introduction-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+  .social-media {
+    display: none;
+  }
+}
+
+.section-subtitle {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+}
+
+.vertical-timeline-element-subtitle {
+  color: #9e9fa5;
+}
+
+.experienceSec {
+  margin-top: 10rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-field input {
+  width: 20rem;
+  padding: 15px 0px;
+  padding-left: 5px;
+  border: none;
+  border-bottom: 1px solid #9e9fa5;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.form-field input:focus {
+  outline: none;
+}
+
+.input-submit {
+  width: 20rem;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+form {
+  width: 500px;
+  background-color: #ffffff;
+  padding: 2rem 0rem 6rem;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.form-fields {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.closing-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.close-form {
+  width: 25px;
+  cursor: pointer;
+  top: 0;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
+}
+
+.close-logo {
+  width: 25px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.projects h1 {
+  margin-bottom: 2rem;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  width: 380px;
+  height: 600px;
+  box-shadow: 2px 2px 15px rgb(191, 181, 181);
+}
+
+.card-picture img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-info {
+  width: 350px;
+  font-size: 16px;
+}
+
+.project-cards-icons {
+  position: absolute;
+  display: flex;
+  gap: 1rem;
+  bottom: 1.5rem;
+  cursor: pointer;
+}

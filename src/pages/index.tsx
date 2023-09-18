@@ -1,8 +1,17 @@
 import * as React from 'react';
-import type { HeadFC, PageProps } from 'gatsby';
+import Header from '../components/Header';
+import Intro from '../components/Intro';
+import Projects from '../components/Projects';
+import type { HeadFC } from 'gatsby';
 
-const MainPage: React.FC<PageProps> = () => {
-  return <div></div>;
+const MainPage = () => {
+  return (
+    <>
+      <Header />
+      <Intro />
+      <Projects />
+    </>
+  );
 };
 
 export default MainPage;
