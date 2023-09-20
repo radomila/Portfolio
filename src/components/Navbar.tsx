@@ -1,4 +1,5 @@
 import React from 'react';
+import DarkMode from './DarkModeButton';
 import '../styles/styles.css';
 
 const Navbar = () => {
@@ -7,6 +8,7 @@ const Navbar = () => {
       <li>Projects</li>
       <li>About me</li>
       <li>Contact</li>
+      <DarkMode />
     </ul>
   );
 };
