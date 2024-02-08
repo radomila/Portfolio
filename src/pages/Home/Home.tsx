@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Typewriter from 'typewriter-effect';
-import Button from './Button';
-import ContactForm from './ContactForm';
-import SocialMediaBar from './SocialMediaBar';
-import '../styles/styles.css';
+import Button from '../../components/Button/Button';
+import ContactForm from '../../components/ContactForm/ContactForm';
+import SideNavbar from '../../components/SideNavbar/SideNavbar';
+import * as styles from './Home.module.css';
 
-const Intro = () => {
+const About = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const handleModalOpen = () => {
@@ -13,10 +13,10 @@ const Intro = () => {
   };
 
   return (
-    <div className="introduction">
-      <div className="introduction-text">
-        <p className="introduction-brief">Radomila Hejhalová</p>
-        <p className="introduction-paragraph">
+    <div className={styles.introduction}>
+      <div>
+        <p className={styles.name}>Radomila Hejhalová</p>
+        <p className={styles.text}>
           <Typewriter
             onInit={(typewriter) => {
               typewriter
@@ -33,7 +33,7 @@ const Intro = () => {
             }}
           />
         </p>
-        <div className="introduction-buttons">
+        <div className={styles.buttons}>
           <div onClick={handleModalOpen}>
             <Button buttonType="primary" text="Contact" />
           </div>
@@ -45,11 +45,11 @@ const Intro = () => {
           {modalIsOpen && <ContactForm handleModalOpen={handleModalOpen} />}
         </div>
       </div>
-      <div className="introduction-social-media">
-        <SocialMediaBar />
+      <div className={styles.socials}>
+        <SideNavbar />
       </div>
     </div>
   );
 };
 
-export default Intro;
+export default About;

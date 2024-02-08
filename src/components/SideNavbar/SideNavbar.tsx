@@ -1,8 +1,7 @@
 import React from 'react';
-import facebook from '../icons/facebook.svg';
-import githubSocial from '../icons/github-social.svg';
-import linkedin from '../icons/linkedin.svg';
-import '../styles/styles.css';
+import facebook from '../../icons/facebook.svg';
+import githubSocial from '../../icons/github-social.svg';
+import linkedin from '../../icons/linkedin.svg';
 
 type LinkProps = {
   href: string;

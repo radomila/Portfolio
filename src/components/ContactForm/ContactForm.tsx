@@ -1,7 +1,7 @@
 import React from 'react';
-import cross from '../icons/cross.png';
+import cross from '../../icons/cross.png';
 import { useForm } from 'react-hook-form';
-import '../styles/styles.css';
+import * as styles from './ContactForm.module.css';
 
 const ContactForm = (props: any) => {
   const { register, handleSubmit } = useForm();
@@ -9,14 +9,14 @@ const ContactForm = (props: any) => {
   const handleError = () => {};
 
   return (
-    <div className="contact">
-      <div className="form-fields">
+    <div>
+      <div className={styles.fields}>
         <form onSubmit={handleSubmit(handleSuccess, handleError)}>
-          <div onClick={props.handleModalOpen} className="closing-icon">
-            <img className="close-form" src={cross} alt="close-icon" />
+          <div onClick={props.handleModalOpen} className={styles.close}>
+            <img src={cross} alt="close-icon" />
           </div>
-          <div className="form-content">
-            <div className="form-field">
+          <div className={styles.content}>
+            <div className={styles.field}>
               <input
                 type="text"
                 placeholder="Full name"
@@ -27,7 +27,7 @@ const ContactForm = (props: any) => {
                 })}
               />
             </div>
-            <div className="form-field">
+            <div className={styles.field}>
               <input
                 type="text"
                 placeholder="Email"
@@ -37,7 +37,7 @@ const ContactForm = (props: any) => {
                 })}
               />
             </div>
-            <div className="form-field">
+            <div className={styles.field}>
               <input
                 type="text"
                 placeholder="Message"
@@ -46,7 +46,7 @@ const ContactForm = (props: any) => {
                 })}
               />
             </div>
-            <input className="input-submit" type="submit" value="Submit" />
+            <input className={styles.submit} type="submit" value="Submit" />
           </div>
         </form>
       </div>

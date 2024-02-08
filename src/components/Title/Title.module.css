@@ -1,0 +1,10 @@
+.primary {
+  display: flex;
+  justify-content: center;
+  color: black;
+  margin-bottom: 4rem;
+}
+
+.secondary {
+  color: #66bfbf;
+}

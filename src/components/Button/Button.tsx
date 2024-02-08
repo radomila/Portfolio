@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/styles.css';
+import * as styles from './Button.module.css';
 
 type ButtonProps = {
   buttonType: 'primary' | 'secondary';
@@ -19,7 +19,7 @@ const Button = (button: ButtonProps) => {
     }
   };
   const buttonClassName =
-    button.buttonType === 'primary' ? 'button-primary' : 'button-secondary';
+    button.buttonType === 'primary' ? styles.primary : styles.secondary;
   return (
     <button onClick={handleScroll} className={buttonClassName}>
       {button.text}

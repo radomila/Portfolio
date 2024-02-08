@@ -1,14 +1,13 @@
 import React from 'react';
-import DarkMode from './DarkModeButton';
-import '../styles/styles.css';
+import * as styles from './Navbar.module.css';
 
 const Navbar = () => {
   return (
-    <ul className="navbar">
+    <ul className={styles.navbar}>
+      <li>Home</li>
       <li>Projects</li>
       <li>About me</li>
       <li>Contact</li>
-      <DarkMode />
     </ul>
   );
 };
