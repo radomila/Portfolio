@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Title.module.css';
 
 type TitleProps = {
-  titleType?: 'primary' | 'secondary' | 'ternary';
+  titleType?: 'primary' | 'secondary';
   text: string;
 };
 

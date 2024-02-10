@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Typewriter from 'typewriter-effect';
+import profile from '../../images/programmer.svg';
 import Button from '../../components/Button/Button';
 import ContactForm from '../../components/ContactForm/ContactForm';
 import SideNavbar from '../../components/SideNavbar/SideNavbar';
@@ -15,24 +15,14 @@ const About = () => {
   return (
     <div className={styles.introduction}>
       <div>
-        <p className={styles.name}>Radomila Hejhalová</p>
+        <p className={styles.name}>Hello World!</p>
         <p className={styles.text}>
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-                .typeString(
-                  'Frontend developer and Software Engineering student.'
-                )
-                .pauseFor(2500)
-                .deleteAll()
-                .start();
-            }}
-            options={{
-              autoStart: true,
-              loop: true,
-            }}
-          />
+          Welcome to my corner of the web. I'm Radomila, a passionate software
+          engineering student with a focus on frontend development. I thrive on
+          creating user experiences and crafting interfaces for the digital
+          world.
         </p>
+
         <div className={styles.buttons}>
           <div onClick={handleModalOpen}>
             <Button buttonType="primary" text="Contact" />
@@ -45,9 +35,7 @@ const About = () => {
           {modalIsOpen && <ContactForm handleModalOpen={handleModalOpen} />}
         </div>
       </div>
-      <div className={styles.socials}>
-        <SideNavbar />
-      </div>
+      <img className={styles.picture} src={profile} alt="profile" />
     </div>
   );
 };

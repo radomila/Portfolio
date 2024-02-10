@@ -8,14 +8,14 @@ const Projects = () => {
     <section className={styles.projects}>
       <h1>Projects</h1>
       <div className={styles.cards}>
-        {data.map((project: any) => {
+        {data.map(({ img, header, text, githubLink, netlifyLink }) => {
           return (
             <ProjectCard
-              img={project.img}
-              header={project.header}
-              text={project.text}
-              github={project.githubLink}
-              netlify={project.netlifyLink}
+              img={img}
+              header={header}
+              text={text}
+              github={githubLink}
+              netlify={netlifyLink}
             />
           );
         })}

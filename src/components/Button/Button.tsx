@@ -8,6 +8,7 @@ type ButtonProps = {
 };
 
 const Button = (button: ButtonProps) => {
+  // TODO: refactor this using useRef
   const handleScroll = () => {
     const targetSection = document.querySelector(
       `.${button.targetSectionName}`
