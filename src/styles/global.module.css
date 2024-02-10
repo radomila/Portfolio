@@ -5,3 +5,7 @@ body {
   font-family: 'Geologica', sans-serif;
   background-color: #fafafa;
 }
+
+section {
+  margin-top: 15rem;
+}

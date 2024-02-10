@@ -5,7 +5,7 @@ import * as styles from './Projects.module.css';
 
 const Projects = () => {
   return (
-    <div className={styles.projects}>
+    <section className={styles.projects}>
       <h1>Projects</h1>
       <div className={styles.cards}>
         {data.map((project: any) => {
@@ -20,7 +20,7 @@ const Projects = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 
