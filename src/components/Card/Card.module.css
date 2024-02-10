@@ -1,0 +1,30 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  width: 380px;
+  height: 600px;
+  box-shadow: 2px 2px 15px rgb(191, 181, 181);
+}
+
+.picture img {
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  width: 350px;
+  font-size: 16px;
+}
+
+.icons {
+  position: absolute;
+  display: flex;
+  gap: 1rem;
+  bottom: 1.5rem;
+  cursor: pointer;
+}

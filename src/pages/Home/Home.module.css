@@ -1,0 +1,42 @@
+.introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  margin-top: 8rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.name {
+  max-width: 50rem;
+  font-size: 3rem;
+  color: black;
+  font-weight: 700;
+  margin: 0;
+}
+
+.text {
+  margin: 0;
+  max-width: 50rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-right: 0.5rem;
+  width: 3rem;
+  cursor: pointer;
+}
+
+.picture {
+  width: 25rem;
+}
