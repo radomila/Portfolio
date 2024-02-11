@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import profile from '../../images/programmer.svg';
 import Button from '../../components/Button/Button';
 import ContactForm from '../../components/ContactForm/ContactForm';
-import SideNavbar from '../../components/SideNavbar/SideNavbar';
 import * as styles from './Home.module.css';
 
 const About = () => {
