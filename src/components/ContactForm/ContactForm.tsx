@@ -3,7 +3,11 @@ import cross from '../../icons/cross.png';
 import { useForm } from 'react-hook-form';
 import * as styles from './ContactForm.module.css';
 
-const ContactForm = (props: any) => {
+interface ContactformProps {
+  handleModalOpen: () => void;
+}
+
+const ContactForm = ({ handleModalOpen }: ContactformProps) => {
   const { register, handleSubmit } = useForm();
   const handleSuccess = () => {};
   const handleError = () => {};
@@ -12,7 +16,7 @@ const ContactForm = (props: any) => {
     <div>
       <div className={styles.fields}>
         <form onSubmit={handleSubmit(handleSuccess, handleError)}>
-          <div onClick={props.handleModalOpen} className={styles.close}>
+          <div onClick={handleModalOpen} className={styles.close}>
             <img src={cross} alt="close-icon" />
           </div>
           <div className={styles.content}>
