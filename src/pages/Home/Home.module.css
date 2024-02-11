@@ -39,4 +39,35 @@
 
 .picture {
   width: 25rem;
+  position: relative;
+  animation-name: picture;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes picture {
+  0% {
+    left: 0rem;
+    top: 0.5rem;
+  }
+
+  25% {
+    left: 0rem;
+    top: 0rem;
+  }
+
+  50% {
+    left: 0rem;
+    top: 0.5rem;
+  }
+
+  75% {
+    left: 0rem;
+    top: 0rem;
+  }
+
+  100% {
+    left: 0rem;
+    top: 0.5rem;
+  }
 }
