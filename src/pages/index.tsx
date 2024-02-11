@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Header from '../components/Header/Header';
 import Home from './Home/Home';
 import Projects from './Projects/Projects';
@@ -8,12 +8,12 @@ import type { HeadFC } from 'gatsby';
 
 const MainPage = () => {
   return (
-    <>
+    <div id="light">
       <Header />
       <Home />
       <About />
       <Projects />
-    </>
+    </div>
   );
 };
 
