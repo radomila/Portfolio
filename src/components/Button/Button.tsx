@@ -7,12 +7,10 @@ type ButtonProps = {
   targetSectionName?: string;
 };
 
-const Button = (button: ButtonProps) => {
+const Button = ({ buttonType, text, targetSectionName }: ButtonProps) => {
   // TODO: refactor this using useRef
   const handleScroll = () => {
-    const targetSection = document.querySelector(
-      `.${button.targetSectionName}`
-    );
+    const targetSection = document.querySelector(`.${targetSectionName}`);
     if (targetSection) {
       targetSection.scrollIntoView({
         behavior: 'smooth',
@@ -20,10 +18,10 @@ const Button = (button: ButtonProps) => {
     }
   };
   const buttonClassName =
-    button.buttonType === 'primary' ? styles.primary : styles.secondary;
+    buttonType === 'primary' ? styles.primary : styles.secondary;
   return (
     <button onClick={handleScroll} className={buttonClassName}>
-      {button.text}
+      {text}
     </button>
   );
 };

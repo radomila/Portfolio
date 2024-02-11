@@ -5,14 +5,14 @@ import linkedin from '../../icons/linkedin.svg';
 
 type LinkProps = {
   href: string;
-  img: any;
+  img: string;
   alt: string;
 };
 
-const SocialMediaLink = (link: LinkProps) => {
+const SocialMediaLink = ({ href, img, alt }: LinkProps) => {
   return (
-    <a href={link.href} rel="noreferrer" target="_blank">
-      <img src={link.img} alt={link.alt} />
+    <a href={href} rel="noreferrer" target="_blank">
+      <img src={img} alt={alt} />
     </a>
   );
 };

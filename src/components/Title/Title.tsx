@@ -2,13 +2,13 @@ import React from 'react';
 import styles from './Title.module.css';
 
 type TitleProps = {
-  titleType?: 'primary' | 'secondary';
+  titleType: 'primary' | 'secondary';
   text: string;
 };
 
-const Title = (title: TitleProps) => {
+const Title = ({ titleType, text }: TitleProps) => {
   let titleClassName;
-  switch (title.titleType) {
+  switch (titleType) {
     case 'primary':
       titleClassName = styles.primary;
       break;
@@ -18,7 +18,7 @@ const Title = (title: TitleProps) => {
     default:
       titleClassName = styles.primary;
   }
-  return <h2 className={titleClassName}>{title.text}</h2>;
+  return <h2 className={titleClassName}>{text}</h2>;
 };
 
 export default Title;
