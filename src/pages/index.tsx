@@ -3,12 +3,15 @@ import Header from '../components/Header/Header';
 import Home from './Home/Home';
 import Projects from './Projects/Projects';
 import About from './About/About';
-import '../styles/global.module.css';
+import * as styles from '../styles/global.module.css';
 import type { HeadFC } from 'gatsby';
+import { useThemeToggleContext } from '../components/Context/ThemeContext';
 
 const MainPage = () => {
+  const { theme } = useThemeToggleContext();
+
   return (
-    <div id="light">
+    <div className={theme === 'dark' ? styles.dark : styles.light}>
       <Header />
       <Home />
       <About />
