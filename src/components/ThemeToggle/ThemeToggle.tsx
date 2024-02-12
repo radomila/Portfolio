@@ -1,22 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useThemeToggleContext } from '../Context/ThemeContext';
 import * as styles from './ThemeToggle.module.css';
 
 const ThemeToggle = () => {
-  const [isActive, setIsActive] = useState(true);
+  const { theme, setTheme } = useThemeToggleContext();
 
-  const toggleTheme = () => {
-    setIsActive(!isActive);
+  const handleThemeToggle = () => {
+    setTheme((curr) => (curr === 'light' ? 'dark' : 'light'));
   };
 
   return (
     <div
-      className={`${styles.switcher} ${isActive ? styles.active : ''}`}
-      onClick={toggleTheme}
+      className={`${styles.switcher} ${theme === 'dark' ? styles.active : ''}`}
+      onClick={handleThemeToggle}
     >
       <div
-        className={`${styles.flicker} ${isActive ? styles.active : ''}`}
+        className={`${styles.flicker} ${theme === 'dark' ? styles.active : ''}`}
       ></div>
-      <div className={`${isActive ? styles.sun : styles.moon}`}></div>
+      <div className={`${theme === 'dark' ? styles.sun : styles.moon}`}></div>
     </div>
   );
 };
