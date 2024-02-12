@@ -1,24 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100&family=Heebo:wght@300&family=Lato&family=Montserrat+Alternates:wght@100&family=Nunito+Sans:opsz,wght@6..12,300&family=Raleway:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Geologica:wght@100&family=Heebo:wght@300&family=Lato&family=Montserrat+Alternates:wght@100&family=Mulish:wght@300&family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@400;500;600;700;800&family=Raleway:wght@300&family=Ubuntu&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --background-color-light: #fafafa;
   --background-color-dark: #212529;
 }
 
-body {
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
   font-family: 'Geologica', sans-serif;
-  background-color: var(--background-color-light);
+  background-color: #fafafa;
+  color: #212529;
 }
 
 .light {
-  background-color: var(--background-color-light);
-  color: var(--background-color-dark);
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #fafafa;
+  color: #212529;
 }
 
 .dark {
-  background-color: var(--background-color-dark);
-  color: var(--background-color-light);
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #212529;
+  color: #fafafa;
 }
 
 section {
