@@ -10,7 +10,7 @@ type ButtonProps = {
 
 const Button = (button: ButtonProps) => {
   const buttonClassName =
-    buttonType === 'primary' ? styles.primary : styles.secondary;
+    button.buttonType === 'primary' ? styles.primary : styles.secondary;
   return (
     <button className={buttonClassName} onClick={button.onClick}>
       {button.text}

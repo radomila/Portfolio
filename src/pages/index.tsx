@@ -17,7 +17,7 @@ const MainPage = () => {
       <Home myRef={myRef} />
       <About />
       <Projects myRef={myRef} />
-    </>
+    </div>
   );
 };
 
