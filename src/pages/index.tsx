@@ -10,13 +10,13 @@ import { useThemeToggleContext } from '../components/Context/ThemeContext';
 const MainPage = () => {
   const { theme } = useThemeToggleContext();
 
-  const myRef = useRef<HTMLDivElement>(null);
+  const projectsRef = useRef<HTMLDivElement>(null);
   return (
     <div className={theme === 'dark' ? styles.dark : styles.light}>
       <Header />
-      <Home myRef={myRef} />
+      <Home projectsRef={projectsRef} />
       <About />
-      <Projects myRef={myRef} />
+      <Projects projectsRef={projectsRef} />
     </div>
   );
 };

@@ -9,15 +9,15 @@ const ThemeToggle = () => {
     setTheme((curr) => (curr === 'light' ? 'dark' : 'light'));
   };
 
+  const dark = theme === 'dark';
+
   return (
     <div
-      className={`${styles.switcher} ${theme === 'dark' ? styles.active : ''}`}
+      className={`${styles.switcher} ${dark ? styles.active : ''}`}
       onClick={handleThemeToggle}
     >
-      <div
-        className={`${styles.flicker} ${theme === 'dark' ? styles.active : ''}`}
-      ></div>
-      <div className={`${theme === 'dark' ? styles.sun : styles.moon}`}></div>
+      <div className={`${styles.flicker} ${dark ? styles.active : ''}`}></div>
+      <div className={`${dark ? styles.sun : styles.moon}`}></div>
     </div>
   );
 };
