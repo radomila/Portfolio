@@ -9,6 +9,10 @@
   font-weight: 600;
 }
 
+.primary.active {
+  background-color: #36bfbf;
+}
+
 .secondary {
   background-color: #ffffff;
   color: #7c73e6;
@@ -18,4 +22,9 @@
   cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
+}
+
+.secondary.active {
+  color: #36bfbf;
+  border: 3px solid #36bfbf;
 }
