@@ -5,7 +5,7 @@ import ContactForm from '../../components/ContactForm/ContactForm';
 import * as styles from './Home.module.css';
 
 interface Props {
-  myRef: any;
+  myRef: React.RefObject<HTMLDivElement> | null;
 }
 
 const About = ({ myRef }: Props) => {
@@ -16,7 +16,7 @@ const About = ({ myRef }: Props) => {
   };
 
   const handleScrollIntoSection = () => {
-    myRef.current.scrollIntoView({ behavior: 'smooth' });
+    myRef?.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (

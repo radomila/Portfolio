@@ -4,7 +4,7 @@ import data from './data';
 import * as styles from './Projects.module.css';
 
 interface ProjectsProps {
-  myRef: any;
+  myRef: React.RefObject<HTMLDivElement> | null;
 }
 
 const Projects = ({ myRef }: ProjectsProps) => {
