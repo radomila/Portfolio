@@ -1,26 +1,23 @@
 import React from 'react';
+import { useThemeToggleContext } from '../Context/ThemeContext';
 import * as styles from './Button.module.css';
 
 type ButtonProps = {
   buttonType: 'primary' | 'secondary';
   text: string;
-  targetSectionName?: string;
+  onClick?: () => void;
 };
 
-const Button = ({ buttonType, text, targetSectionName }: ButtonProps) => {
-  // TODO: refactor this using useRef
-  const handleScroll = () => {
-    const targetSection = document.querySelector(`.${targetSectionName}`);
-    if (targetSection) {
-      targetSection.scrollIntoView({
-        behavior: 'smooth',
-      });
-    }
-  };
+const Button = ({ buttonType, text, onClick }: ButtonProps) => {
+  const { theme } = useThemeToggleContext();
+
   const buttonClassName =
     buttonType === 'primary' ? styles.primary : styles.secondary;
+
+  const buttonTheme = theme === 'dark' ? styles.active : '';
+
   return (
-    <button onClick={handleScroll} className={buttonClassName}>
+    <button className={`${buttonClassName} ${buttonTheme}`} onClick={onClick}>
       {text}
     </button>
   );
