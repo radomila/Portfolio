@@ -4,12 +4,12 @@ import data from './data';
 import * as styles from './Projects.module.css';
 
 interface ProjectsProps {
-  myRef: React.RefObject<HTMLDivElement> | null;
+  projectsRef: React.RefObject<HTMLDivElement> | null;
 }
 
-const Projects = ({ myRef }: ProjectsProps) => {
+const Projects = ({ projectsRef }: ProjectsProps) => {
   return (
-    <section className={styles.projects} ref={myRef}>
+    <section className={styles.projects} ref={projectsRef}>
       <h1>Projects</h1>
       <div className={styles.cards}>
         {data.map(({ img, header, text, githubLink, netlifyLink }) => {

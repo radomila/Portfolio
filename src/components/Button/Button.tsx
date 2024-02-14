@@ -4,16 +4,15 @@ import * as styles from './Button.module.css';
 type ButtonProps = {
   buttonType: 'primary' | 'secondary';
   text: string;
-  targetSectionName?: string;
   onClick?: () => void;
 };
 
-const Button = (button: ButtonProps) => {
+const Button = ({ buttonType, text, onClick }: ButtonProps) => {
   const buttonClassName =
-    button.buttonType === 'primary' ? styles.primary : styles.secondary;
+    buttonType === 'primary' ? styles.primary : styles.secondary;
   return (
-    <button className={buttonClassName} onClick={button.onClick}>
-      {button.text}
+    <button className={buttonClassName} onClick={onClick}>
+      {text}
     </button>
   );
 };

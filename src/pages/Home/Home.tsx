@@ -5,10 +5,10 @@ import ContactForm from '../../components/ContactForm/ContactForm';
 import * as styles from './Home.module.css';
 
 interface Props {
-  myRef: React.RefObject<HTMLDivElement> | null;
+  projectsRef: React.RefObject<HTMLDivElement> | null;
 }
 
-const About = ({ myRef }: Props) => {
+const About = ({ projectsRef }: Props) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const handleModalOpen = () => {
@@ -16,7 +16,7 @@ const About = ({ myRef }: Props) => {
   };
 
   const handleScrollIntoSection = () => {
-    myRef?.current?.scrollIntoView({ behavior: 'smooth' });
+    projectsRef?.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -37,7 +37,6 @@ const About = ({ myRef }: Props) => {
           <Button
             buttonType="secondary"
             text="Projects"
-            targetSectionName="projects"
             onClick={handleScrollIntoSection}
           />
           {modalIsOpen && <ContactForm handleModalOpen={handleModalOpen} />}
