@@ -1,5 +1,4 @@
 import React from 'react';
-import { useThemeToggleContext } from '../Context/ThemeContext';
 import * as styles from './Button.module.css';
 
 type ButtonProps = {
@@ -9,15 +8,11 @@ type ButtonProps = {
 };
 
 const Button = ({ buttonType, text, onClick }: ButtonProps) => {
-  const { theme } = useThemeToggleContext();
-
   const buttonClassName =
     buttonType === 'primary' ? styles.primary : styles.secondary;
 
-  const buttonTheme = theme === 'dark' ? styles.active : '';
-
   return (
-    <button className={`${buttonClassName} ${buttonTheme}`} onClick={onClick}>
+    <button className={buttonClassName} onClick={onClick}>
       {text}
     </button>
   );
