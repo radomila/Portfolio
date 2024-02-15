@@ -6,7 +6,7 @@ const Navbar = () => {
     <ul className={styles.navbar}>
       <li>Home</li>
       <li>Projects</li>
-      <li>About me</li>
+      <li>Experience</li>
       <li>Contact</li>
     </ul>
   );
