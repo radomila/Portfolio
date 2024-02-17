@@ -17,7 +17,7 @@ const ThemeToggle = () => {
       onClick={handleThemeToggle}
     >
       <div className={`${styles.flicker} ${dark ? styles.active : ''}`}></div>
-      <div className={`${dark ? styles.sun : styles.moon}`}></div>
+      <div className={`${dark ? '' : styles.moon}`}></div>
     </div>
   );
 };
