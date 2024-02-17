@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Title.module.css';
+import * as styles from './Title.module.css';
 
 type TitleProps = {
   titleType: 'primary' | 'secondary';
