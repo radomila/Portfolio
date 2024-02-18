@@ -1,5 +1,5 @@
 import React from 'react';
-import data from './data';
+import { data } from './data';
 import TimelineItem from './TimelineItem';
 import { useThemeToggleContext } from '../Context/ThemeContext';
 import * as styles from './Timeline.module.css';

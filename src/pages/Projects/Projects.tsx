@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectCard from '../../components/Card/Card';
-import data from './data';
+import { data } from '../../components/data';
 import * as styles from './Projects.module.css';
 import Title from '../../components/Title';
 

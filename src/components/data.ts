@@ -1,9 +1,9 @@
-import forkify from '../../images/forkify.png';
-import forester from '../../images/forester.png';
-import bankist from '../../images/bankist.png';
-import mapty from '../../images/mapty.png';
+import forkify from '../images/forkify.png';
+import forester from '../images/forester.png';
+import bankist from '../images/bankist.png';
+import mapty from '../images/mapty.png';
 
-const data = [
+export const data = [
   {
     img: forester,
     header: 'Forester',
@@ -36,5 +36,3 @@ const data = [
     netlifyLink: '',
   },
 ];
-
-export default data;

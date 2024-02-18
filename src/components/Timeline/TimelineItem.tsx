@@ -9,7 +9,7 @@ const TimelineItem = ({ semester }: TimelineItemProps) => {
   return (
     <div className={styles.item}>
       <div className={styles.content}>
-        <p className={styles.year}>{semester.year}</p>
+        <p>{semester.year}</p>
         <div>
           <p className={styles.title}>{semester.title}</p>
           <p>{semester.subjects.join(', ')}</p>

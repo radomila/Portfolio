@@ -1,4 +1,4 @@
-const data = [
+export const data = [
   {
     year: '2020-2021 (1st semestr)',
     title: 'Subjects',
@@ -86,5 +86,3 @@ const data = [
     ],
   },
 ];
-
-export default data;
