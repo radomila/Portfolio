@@ -9,9 +9,8 @@ export const data = [
       'Essentials of mathematics',
     ],
     titleExperience: 'Experience',
-    experience: [
+    experience:
       'Basics of programming in JavaScript, data structures and algorithms.',
-    ],
   },
   {
     year: '2020-2021 (2nd semestr)',
@@ -23,9 +22,8 @@ export const data = [
       'Cloud Application Architecture',
     ],
     titleExperience: 'Experience',
-    experience: [
+    experience:
       'Basics of frontend and backend development by using ReactJS and ExpressJS.',
-    ],
   },
   {
     year: '2021-2022 (3rd semestr)',
@@ -38,9 +36,8 @@ export const data = [
       'Discrete Mathematics',
     ],
     titleExperience: 'Experience',
-    experience: [
+    experience:
       'Junior Software developer at Cyrkl focused on frontend development using JavaScript, ReactJS and styled-components. Worked on Administration app and Career portal.',
-    ],
   },
   {
     year: '2021-2022 (4th semestr)',
@@ -53,9 +50,8 @@ export const data = [
       'Quality Assurance',
     ],
     titleExperience: 'Experience',
-    experience: [
+    experience:
       'Junior Software developer at Cyrkl focused on frontend development using JavaScript, ReactJS and styled-components. Worked on Career portal and Homepage.',
-    ],
   },
   {
     year: '2022-2023 (5th semestr)',
@@ -67,9 +63,8 @@ export const data = [
       'Advanced Algorithm Development',
     ],
     titleExperience: 'Experience',
-    experience: [
+    experience:
       'Bachelor thesis focused on web performance comparison on the selected component named uuForester between SolidJS and UAF.',
-    ],
   },
   {
     year: '2022-2023 (6th semestr)',
@@ -81,9 +76,8 @@ export const data = [
       'The Bachelor Thesis Seminar 2',
     ],
     titleExperience: 'Experience',
-    experience: [
+    experience:
       'Frontend developer on the project Pomáhej Ukrajině using ReactJS, TypeScript and Tailwind.',
-    ],
   },
   {
     year: '2023-2024 (1th semestr of Masters degree)',
@@ -96,8 +90,7 @@ export const data = [
       'Internet of Thing',
     ],
     titleExperience: 'Experience',
-    experience: [
+    experience:
       'Focused on study, learning programming in Python and R and creating my own projects in terms of frontend development, exploring new technologies. ',
-    ],
   },
 ];

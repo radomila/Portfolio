@@ -1,8 +1,15 @@
 import React from 'react';
 import * as styles from './Timeline.module.css';
 
+interface Semester {
+  year: string;
+  title: string;
+  subjects: string[];
+  titleExperience: string;
+  experience: string;
+}
 interface TimelineItemProps {
-  semester: any;
+  semester: Semester;
 }
 
 const TimelineItem = ({ semester }: TimelineItemProps) => {
