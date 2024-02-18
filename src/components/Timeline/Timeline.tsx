@@ -8,11 +8,13 @@ const Position = () => {
   const { theme } = useThemeToggleContext();
   const dark = theme === 'dark';
 
+  const reversedData = data.reverse();
+
   return (
     <div className={`${styles.container} ${dark ? '' : styles.light}`}>
-      {data.length > 0 && (
+      {reversedData.length > 0 && (
         <>
-          {data.map((semester) => {
+          {reversedData.map((semester) => {
             return <TimelineItem semester={semester} />;
           })}
         </>

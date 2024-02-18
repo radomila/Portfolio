@@ -85,4 +85,19 @@ export const data = [
       'Frontend developer on the project Pomáhej Ukrajině using ReactJS, TypeScript and Tailwind.',
     ],
   },
+  {
+    year: '2023-2024 (1th semestr of Masters degree)',
+    title: 'Subjects',
+    subjects: [
+      'Statistical Methods in Data Analysis',
+      'Data Analysis and their visualization',
+      'Skills in Technical Writing',
+      'Basics of programming in Python',
+      'Internet of Thing',
+    ],
+    titleExperience: 'Experience',
+    experience: [
+      'Focused on study, learning programming in Python and R and creating my own projects in terms of frontend development, exploring new technologies. ',
+    ],
+  },
 ];
