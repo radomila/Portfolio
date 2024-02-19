@@ -13,3 +13,7 @@ export interface Semester {
   titleExperience: string;
   experience: string;
 }
+
+export interface ReferenceProps {
+  sectionRef: React.RefObject<HTMLDivElement> | null;
+}

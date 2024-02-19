@@ -1,13 +1,18 @@
 import React from 'react';
 import * as styles from './Navbar.module.css';
 
-const Navbar = () => {
+interface NavbarProps {
+  onMenuItemClick: (name: string) => void;
+}
+
+const Navbar = ({ onMenuItemClick }: NavbarProps) => {
   return (
     <ul className={styles.navbar}>
-      <li>Home</li>
-      <li>Projects</li>
-      <li>Experience</li>
-      <li>Contact</li>
+      <li onClick={() => onMenuItemClick('home')}>Home</li>
+      <li onClick={() => onMenuItemClick('projects')}>Projects</li>
+      <li onClick={() => onMenuItemClick('experience')}>Experience</li>
+      {/* TODO: Finish contact section  */}
+      {/* <li>Contact</li> */}
     </ul>
   );
 };
