@@ -1,4 +1,6 @@
-export const data = [
+import { Semester } from '../../types/types';
+
+export const data: Semester[] = [
   {
     year: '2020-2021 (1st semestr)',
     title: 'Subjects',

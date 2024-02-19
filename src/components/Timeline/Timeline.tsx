@@ -1,7 +1,7 @@
 import React from 'react';
 import { data } from './data';
-import TimelineItem from './TimelineItem';
 import { useThemeToggleContext } from '../Context/ThemeContext';
+import TimelineItem from '../TimelineItem/TimelineItem';
 import * as styles from './Timeline.module.css';
 
 const Position = () => {

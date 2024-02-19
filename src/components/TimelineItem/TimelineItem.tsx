@@ -1,13 +1,7 @@
 import React from 'react';
-import * as styles from './Timeline.module.css';
+import { Semester } from '../../types/types';
+import * as styles from './TimelineItem.module.css';
 
-interface Semester {
-  year: string;
-  title: string;
-  subjects: string[];
-  titleExperience: string;
-  experience: string;
-}
 interface TimelineItemProps {
   semester: Semester;
 }

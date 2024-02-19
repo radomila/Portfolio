@@ -1,3 +1,5 @@
+@import url('../../styles/theme/colors.module.css');
+
 .card {
   position: relative;
   display: flex;
@@ -5,11 +7,11 @@
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: var(--white);
+  color: var(--black);
   width: 380px;
   height: 600px;
-  box-shadow: 2px 2px 15px rgb(191, 181, 181);
+  box-shadow: 2px 2px 15px var(--grey);
 }
 
 .picture img {

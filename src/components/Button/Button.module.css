@@ -1,21 +1,23 @@
+@import url('../../styles/theme/colors.module.css');
+
 .primary {
-  background-color: #de1b4a;
-  color: #ffffff;
+  background-color: var(--pink);
+  color: var(--white);
   border: none;
   border-radius: 50px;
   padding: 15px 40px;
   cursor: pointer;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .secondary {
-  background-color: #ffffff;
-  color: #de1b4a;
-  border: 3px solid #de1b4a;
+  background-color: var(--white);
+  color: var(--pink);
+  border: 3px solid var(--pink);
   border-radius: 50px;
   padding: 15px 30px;
   cursor: pointer;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
 }
