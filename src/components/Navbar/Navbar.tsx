@@ -12,7 +12,7 @@ const Navbar = ({ onMenuItemClick }: NavbarProps) => {
       <li onClick={() => onMenuItemClick('projects')}>Projects</li>
       <li onClick={() => onMenuItemClick('experience')}>Experience</li>
       {/* TODO: Finish contact section  */}
-      {/* <li>Contact</li> */}
+      <li>Contact</li>
     </ul>
   );
 };
