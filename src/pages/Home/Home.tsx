@@ -2,25 +2,22 @@ import React, { useState } from 'react';
 import profile from '../../images/programmer.svg';
 import Button from '../../components/Button/Button';
 import ContactForm from '../../components/ContactForm/ContactForm';
+import { ReferenceProps } from '../../types/types';
 import * as styles from './Home.module.css';
 
-interface Props {
-  projectsRef: React.RefObject<HTMLDivElement> | null;
+interface HomeProps extends ReferenceProps {
+  onMenuItemClick: (name: string) => void;
 }
 
-const About = ({ projectsRef }: Props) => {
+const About = ({ sectionRef, onMenuItemClick }: HomeProps) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const handleModalOpen = () => {
     setModalIsOpen(!modalIsOpen);
   };
 
-  const handleScrollIntoSection = () => {
-    projectsRef?.current?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
-    <div className={styles.introduction}>
+    <div className={styles.introduction} ref={sectionRef}>
       <div>
         <p className={styles.name}>Hello World!</p>
         <p className={styles.text}>
@@ -37,7 +34,7 @@ const About = ({ projectsRef }: Props) => {
           <Button
             buttonType="secondary"
             text="Projects"
-            onClick={handleScrollIntoSection}
+            onClick={() => onMenuItemClick('projects')}
           />
           {modalIsOpen && <ContactForm handleModalOpen={handleModalOpen} />}
         </div>

@@ -1,18 +1,18 @@
-import React from 'react';
-import Logo from '../Logo/Logo';
-import Navbar from '../Navbar/Navbar';
-import ThemeToggle from '../ThemeToggle/ThemeToggle';
+import React, { ReactNode } from 'react';
+import { useThemeToggleContext } from '../Context/ThemeContext';
 import * as styles from './Header.module.css';
 
-const Header = () => {
+interface HeaderProps {
+  children: ReactNode;
+}
+
+const Header = ({ children }: HeaderProps) => {
+  const { theme } = useThemeToggleContext();
+
   return (
-    <>
-      <div className={styles.header}>
-        <Logo />
-        <Navbar />
-        <ThemeToggle />
-      </div>
-    </>
+    <div className={`${styles.header} ${theme === 'dark' ? styles.dark : ''}`}>
+      {children}
+    </div>
   );
 };
 

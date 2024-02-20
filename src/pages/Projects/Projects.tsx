@@ -2,15 +2,12 @@ import React from 'react';
 import ProjectCard from '../../components/Card/Card';
 import { data } from '../../data';
 import Title from '../../components/Title';
+import { ReferenceProps } from '../../types/types';
 import * as styles from './Projects.module.css';
 
-interface ProjectsProps {
-  projectsRef: React.RefObject<HTMLDivElement> | null;
-}
-
-const Projects = ({ projectsRef }: ProjectsProps) => {
+const Projects = ({ sectionRef }: ReferenceProps) => {
   return (
-    <section className={styles.projects} ref={projectsRef}>
+    <section className={styles.projects} ref={sectionRef}>
       <Title titleType="primary" text="Projects" />
       <div className={styles.cards}>
         {data.map((card) => {
