@@ -42,19 +42,6 @@ export const data: Semester[] = [
       'Bachelor thesis focused on web performance comparison on the selected component named uuForester between SolidJS and UAF.',
   },
   {
-    year: '2020-2021 (1st semestr)',
-    title: 'Subjects',
-    subjects: [
-      'Business English 1',
-      'Study Essentials',
-      'Software Development Essentials',
-      'Essentials of mathematics',
-    ],
-    titleExperience: 'Experience',
-    experience:
-      'Basics of programming in JavaScript, data structures and algorithms.',
-  },
-  {
     year: '2021-2022 (4th semestr)',
     title: 'Subjects',
     subjects: [
@@ -94,5 +81,18 @@ export const data: Semester[] = [
     titleExperience: 'Experience',
     experience:
       'Basics of frontend and backend development by using ReactJS and ExpressJS.',
+  },
+  {
+    year: '2020-2021 (1st semestr)',
+    title: 'Subjects',
+    subjects: [
+      'Business English 1',
+      'Study Essentials',
+      'Software Development Essentials',
+      'Essentials of mathematics',
+    ],
+    titleExperience: 'Experience',
+    experience:
+      'Basics of programming in JavaScript, data structures and algorithms.',
   },
 ];
