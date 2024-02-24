@@ -10,7 +10,7 @@
 }
 
 .switcher.active {
-  background-color: var(--white);
+  background-color: var(--lightGrey);
 }
 
 .flicker {
@@ -28,8 +28,6 @@
 }
 
 .flicker.active {
-  background-color: var(--black);
-  box-shadow: var(--black);
   left: 1.8rem;
 }
 

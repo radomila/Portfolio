@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import profile from '../../images/programmer.svg';
 import Button from '../../components/Button/Button';
 import ContactForm from '../../components/ContactForm/ContactForm';
 import { ReferenceProps } from '../../types/types';
@@ -19,7 +18,7 @@ const About = ({ sectionRef, onMenuItemClick }: HomeProps) => {
   return (
     <div className={styles.introduction} ref={sectionRef}>
       <div>
-        <p className={styles.name}>Hello World!</p>
+        <p className={styles.name}>Hello World!👋</p>
         <p className={styles.text}>
           Welcome to my corner of the web. I'm Radomila, a passionate software
           engineering student with a focus on frontend development. I thrive on
@@ -39,7 +38,6 @@ const About = ({ sectionRef, onMenuItemClick }: HomeProps) => {
           {modalIsOpen && <ContactForm handleModalOpen={handleModalOpen} />}
         </div>
       </div>
-      <img className={styles.picture} src={profile} alt="profile" />
     </div>
   );
 };

@@ -1,15 +1,16 @@
 .introduction {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 8rem;
-  margin-top: 8rem;
+  margin-top: 10rem;
+  margin-left: 8rem;
   font-family: 'Poppins', sans-serif;
 }
 
 .name {
   max-width: 50rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin: 0;
 }
@@ -34,41 +35,6 @@
   margin-right: 0.5rem;
   width: 3rem;
   cursor: pointer;
-}
-
-.picture {
-  width: 25rem;
-  position: relative;
-  animation-name: picture;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes picture {
-  0% {
-    left: 0rem;
-    top: 0.5rem;
-  }
-
-  25% {
-    left: 0rem;
-    top: 0rem;
-  }
-
-  50% {
-    left: 0rem;
-    top: 0.5rem;
-  }
-
-  75% {
-    left: 0rem;
-    top: 0rem;
-  }
-
-  100% {
-    left: 0rem;
-    top: 0.5rem;
-  }
 }
 
 @media only screen and (max-width: 768px) {

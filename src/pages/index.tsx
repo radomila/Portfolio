@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import Header from '../components/Header/Header';
-import Logo from '../components/Logo/Logo';
 import Navbar from '../components/Navbar/Navbar';
 import ThemeToggle from '../components/ThemeToggle/ThemeToggle';
 import Home from './Home/Home';
@@ -34,9 +33,8 @@ const MainPage = () => {
   return (
     <div className={theme === 'dark' ? styles.dark : styles.light}>
       <Header>
-        <Logo />
-        <Navbar onMenuItemClick={onMenuItemClick} />
         <ThemeToggle />
+        <Navbar onMenuItemClick={onMenuItemClick} />
       </Header>
       <Home sectionRef={homeRef} onMenuItemClick={onMenuItemClick} />
       <Projects sectionRef={projectsRef} />
